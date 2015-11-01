@@ -14,8 +14,6 @@ source LinuxCNC/linuxcnc.tcl
 source LinuxCNC/axis-0.tcl
 source LinuxCNC/axis-1.tcl
 source LinuxCNC/axis-2.tcl
-source LinuxCNC/axis-3.tcl
-source LinuxCNC/axis-4.tcl
 
 unlinkp iocontrol.0.user-enable-out
 unlinkp iocontrol.0.emc-enable-in
