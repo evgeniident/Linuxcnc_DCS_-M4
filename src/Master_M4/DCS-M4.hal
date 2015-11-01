@@ -10,7 +10,7 @@ addf motion-controller servo-thread
 # connect miscellaneous signals
 #******************************
 
-source LinuxCNC/linuxcnc.tcl
+#source LinuxCNC/linuxcnc.tcl
 source LinuxCNC/axis-0.tcl
 source LinuxCNC/axis-1.tcl
 source LinuxCNC/axis-2.tcl
