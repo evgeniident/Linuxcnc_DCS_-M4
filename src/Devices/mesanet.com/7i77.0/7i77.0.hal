@@ -6,9 +6,8 @@ addf hm2_5i25.0.read servo-thread
 addf hm2_5i25.0.write servo-thread
 #addf hm2_5i25.0.pet_watchdog servo-thread
 
-source Devices/mesanet.com/7i77.0/5i25-6i25.hal
-source Devices/mesanet.com/7i77.0/gpio.hal
-source Devices/mesanet.com/7i77.0/spindle.hal
-source Devices/mesanet.com/7i77.0/axis-0.hal
-source Devices/mesanet.com/7i77.0/axis-1.hal
-source Devices/mesanet.com/7i77.0/axis-2.hal
+source Devices/mesanet.com/7i77.0/gpio.tcl
+source Devices/mesanet.com/7i77.0/spindle.tcl
+source Devices/mesanet.com/7i77.0/axis-0.tcl
+source Devices/mesanet.com/7i77.0/axis-1.tcl
+source Devices/mesanet.com/7i77.0/axis-2.tcl
