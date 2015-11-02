@@ -12,8 +12,8 @@ net axis.0.pos-lim-sw-in <= x-pos-limit
 
 
 
-#loadrt pid names=pid.x
-#addf pid.x.do-pid-calcs servo-thread
+loadrt pid names=pid.x
+addf pid.x.do-pid-calcs servo-thread
 setp   pid.x.Pgain     S::AXIS_0(P)
 setp   pid.x.Igain     S::AXIS_0(I)
 setp   pid.x.Dgain     S::AXIS_0(D)
