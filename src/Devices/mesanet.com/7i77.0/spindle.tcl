@@ -4,9 +4,9 @@
 
 # ---PWM Generator signals/setup---
 
-setp   hm2_5i25.0.7i76.0.0.spinout-minlim    $::SPINDLE_9(OUTPUT_MIN_LIMIT)
-setp   hm2_5i25.0.7i76.0.0.spinout-maxlim    $::SPINDLE_9(OUTPUT_MAX_LIMIT)
-setp   hm2_5i25.0.7i76.0.0.spinout-scalemax  $::SPINDLE_9(OUTPUT_SCALE)
+#setp   hm2_5i25.0.7i76.0.0.spinout-minlim    $::SPINDLE_9(OUTPUT_MIN_LIMIT)
+#setp   hm2_5i25.0.7i76.0.0.spinout-maxlim    $::SPINDLE_9(OUTPUT_MAX_LIMIT)
+#setp   hm2_5i25.0.7i76.0.0.spinout-scalemax  $::SPINDLE_9(OUTPUT_SCALE)
 
 net hm2_5i25.0.7i77.0.1.analogout5 <= spindle-vel-cmd
 net hm2_5i25.0.7i77.0.1.spinena    <= machine-is-enabled
