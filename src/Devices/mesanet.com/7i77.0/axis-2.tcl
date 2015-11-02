@@ -11,7 +11,7 @@ net axis.2.neg-lim-sw-in <= z-neg-limit
 net axis.2.pos-lim-sw-in <= z-pos-limit
 
 #loadrt pid pid.y
-addf pid.z.do-pid-calcs servo-thread
+#addf pid.z.do-pid-calcs servo-thread
 setp   pid.z.Pgain     S::AXIS_2(P)
 setp   pid.z.Igain     S::AXIS_2(I)
 setp   pid.z.Dgain     S::AXIS_2(D)
