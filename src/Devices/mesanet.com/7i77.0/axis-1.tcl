@@ -10,7 +10,7 @@ net axis.1.home-sw-in    <= y-home-sw
 net axis.1.neg-lim-sw-in <= y-neg-limit
 net axis.1.pos-lim-sw-in <= y-pos-limit
 
-loadrt pid pid.y
+loadrt pid names=pid.y
 addf pid.y.do-pid-calcs servo-thread
 setp   pid.y.Pgain     S::AXIS_1(P)
 setp   pid.y.Igain     S::AXIS_1(I)
