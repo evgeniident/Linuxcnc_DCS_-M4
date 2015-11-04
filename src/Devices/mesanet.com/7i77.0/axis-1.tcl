@@ -1,15 +1,6 @@
 #*******************
 #  AXIS Y
 #*******************
-net y-enable axis.1.amp-enable-out
-net y-pos-cmd axis.1.motor-pos-cmd
-net y-pos-fb => axis.1.motor-pos-fb
-net y-index-enable <=> axis.1.index-enable
-# ---setup home / limit switch signals---
-net y-home-sw => axis.1.home-sw-in
-net y-neg-limit => axis.1.neg-lim-sw-in
-net y-pos-limit => axis.1.pos-lim-sw-in
-
 loadrt pid names=pid.y
 addf pid.y.do-pid-calcs servo-thread
 setp   pid.y.Pgain     S::AXIS_1(P)
