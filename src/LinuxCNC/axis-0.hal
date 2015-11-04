@@ -8,7 +8,9 @@ net x-index-enable <=> axis.0.index-enable
 
 #  ---home signals---
 net x-home-sw => axis.0.home-sw-in
+#net min-home-x => axis.0.home-sw-in
 
 # ---limit switch signals---
 net x-neg-limit => axis.0.neg-lim-sw-in
+#net min-home-x => axis.0.neg-lim-sw-in
 net x-pos-limit => axis.0.pos-lim-sw-in
