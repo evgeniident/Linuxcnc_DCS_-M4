@@ -1,0 +1,15 @@
+unlinkp axis.0.motor-pos-cmd
+unlinkp axis.0.motor-pos-fb
+net y-pos-loop <= axis.0.motor-pos-cmd => axis.0.motor-pos-fb
+
+unlinkp axis.1.motor-pos-cmd
+unlinkp axis.1.motor-pos-fb
+net y-pos-loop <= axis.1.motor-pos-cmd => axis.1.motor-pos-fb
+
+unlinkp axis.2.motor-pos-cmd
+unlinkp axis.2.motor-pos-fb
+net y-pos-loop <= axis.2.motor-pos-cmd => axis.2.motor-pos-fb
+
+unlinkp iocontrol.0.user-enable-out
+unlinkp iocontrol.0.emc-enable-in
+net linuxcnc.estop-loop iocontrol.0.user-enable-out =>  iocontrol.0.emc-enable-in
