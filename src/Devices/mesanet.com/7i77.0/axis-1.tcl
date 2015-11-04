@@ -1,14 +1,14 @@
 #*******************
 #  AXIS Y
 #*******************
-net axis.1.amp-enable-out y-enable
-net axis.1.motor-pos-cmd y-pos-cmd
-net axis.1.motor-pos-fb <= y-pos-fb
-net axis.1.index-enable <=> y-index-enable
+net y-enable axis.1.amp-enable-out
+net y-pos-cmd axis.1.motor-pos-cmd
+net y-pos-fb => axis.1.motor-pos-fb
+net y-index-enable <=> axis.1.index-enable
 # ---setup home / limit switch signals---
-net axis.1.home-sw-in    <= y-home-sw
-net axis.1.neg-lim-sw-in <= y-neg-limit
-net axis.1.pos-lim-sw-in <= y-pos-limit
+net y-home-sw => axis.1.home-sw-in
+net y-neg-limit => axis.1.neg-lim-sw-in
+net y-pos-limit => axis.1.pos-lim-sw-in
 
 loadrt pid names=pid.y
 addf pid.y.do-pid-calcs servo-thread
@@ -39,7 +39,7 @@ setp hm2_5i25.0.7i77.0.1.analogout1-scalemax S::AXIS_1(OUTPUT_SCALE)
 setp hm2_5i25.0.7i77.0.1.analogout1-minlim   S::AXIS_1(OUTPUT_MIN_LIMIT)
 setp hm2_5i25.0.7i77.0.1.analogout1-maxlim   S::AXIS_1(OUTPUT_MAX_LIMIT)
 
-net hm2_5i25.0.7i77.0.1.analogout1 <= y-output
+net y-output => hm2_5i25.0.7i77.0.1.analogout1
 
 # ---Encoder feedback signals/setup---
 
@@ -50,7 +50,7 @@ setp hm2_5i25.0.encoder.01.index-mask 0
 setp hm2_5i25.0.encoder.01.index-mask-invert 0
 setp hm2_5i25.0.encoder.01.scale S::AXIS_1(ENCODER_SCALE)
 
-net hm2_5i25.0.encoder.01.position      => y-pos-fb
-net hm2_5i25.0.encoder.01.velocity      => y-vel-fb
-net hm2_5i25.0.encoder.01.index-enable <=> y-index-enable
-net hm2_5i25.0.encoder.01.rawcounts     => y-pos-rawcounts
+net y-pos-fb <= hm2_5i25.0.encoder.01.position
+net y-vel-fb <= hm2_5i25.0.encoder.01.velocity
+net y-index-enable <=> hm2_5i25.0.encoder.01.index-enable
+net y-pos-rawcounts <= hm2_5i25.0.encoder.01.rawcounts
