@@ -24,8 +24,6 @@ net x-pos-fb       => pid.x.feedback
 #        AXIS X
 #*******************
 
-#net hm2_5i25.0.7i77.0.1.analogena x-enable 
-
 # ---PWM Generator signals/setup---
 
 setp hm2_5i25.0.7i77.0.1.analogout0-scalemax S::AXIS_0(OUTPUT_SCALE)
