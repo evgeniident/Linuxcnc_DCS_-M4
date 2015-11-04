@@ -1,8 +1,8 @@
 #*******************
 #  AXIS X
 #*******************
-net x-enable => axis.0.amp-enable-out 
-net x-pos-cmd => axis.0.motor-pos-cmd
+net x-enable <= axis.0.amp-enable-out 
+net x-pos-cmd <= axis.0.motor-pos-cmd
 net x-pos-fb => axis.0.motor-pos-fb
 net x-index-enable <=> axis.0.index-enable
 # ---setup home / limit switch signals--- 
