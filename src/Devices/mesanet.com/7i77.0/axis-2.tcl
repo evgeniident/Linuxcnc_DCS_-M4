@@ -41,7 +41,7 @@ setp hm2_5i25.0.encoder.02.index-mask 0
 setp hm2_5i25.0.encoder.02.index-mask-invert 0
 setp hm2_5i25.0.encoder.02.scale S::AXIS_2(ENCODER_SCALE)
 
-net hm2_5i25.0.encoder.02.position      => z-pos-fb
-net hm2_5i25.0.encoder.02.velocity      => z-vel-fb
-net hm2_5i25.0.encoder.02.index-enable <=> z-index-enable
-net hm2_5i25.0.encoder.02.rawcounts     => z-pos-rawcounts
+net z-pos-fb <= hm2_5i25.0.encoder.02.position
+net z-vel-fb <= hm2_5i25.0.encoder.02.velocity
+net z-index-enable <=> hm2_5i25.0.encoder.02.index-enable
+net z-pos-rawcounts <= hm2_5i25.0.encoder.02.rawcounts
