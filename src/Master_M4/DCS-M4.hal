@@ -2,8 +2,5 @@
 #******************************
 # 
 #******************************
-source LinuxCNC/axis-0.tcl
-source LinuxCNC/axis-1.tcl
-source LinuxCNC/axis-2.tcl
 
 
