@@ -26,9 +26,9 @@ net x-pos-fb       => pid.x.feedback
 
 # ---PWM Generator signals/setup---
 
-setp hm2_5i25.0.7i77.0.1.analogout0-scalemax S::AXIS_0(OUTPUT_SCALE)
-setp hm2_5i25.0.7i77.0.1.analogout0-minlim   S::AXIS_0(OUTPUT_MIN_LIMIT)
-setp hm2_5i25.0.7i77.0.1.analogout0-maxlim   S::AXIS_0(OUTPUT_MAX_LIMIT)
+setp hm2_5i25.0.7i77.0.1.analogout0-scalemax [lindex S::AXIS_0(OUTPUT_SCALE) 0]
+setp hm2_5i25.0.7i77.0.1.analogout0-minlim   [lindex S::AXIS_0(OUTPUT_MIN_LIMIT) 0]
+setp hm2_5i25.0.7i77.0.1.analogout0-maxlim   [lindex S::AXIS_0(OUTPUT_MAX_LIMIT) 0]
 
 net x-output => hm2_5i25.0.7i77.0.1.analogout0
 
