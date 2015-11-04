@@ -43,7 +43,7 @@ setp hm2_5i25.0.7i77.0.1.analogout0-scalemax S::AXIS_0(OUTPUT_SCALE)
 setp hm2_5i25.0.7i77.0.1.analogout0-minlim   S::AXIS_0(OUTPUT_MIN_LIMIT)
 setp hm2_5i25.0.7i77.0.1.analogout0-maxlim   S::AXIS_0(OUTPUT_MAX_LIMIT)
 
-net hm2_5i25.0.7i77.0.1.analogout0 <= x-output
+net x-output => hm2_5i25.0.7i77.0.1.analogout0
 
 # ---Encoder feedback signals/setup---
 
@@ -54,7 +54,7 @@ setp hm2_5i25.0.encoder.00.index-mask 0
 setp hm2_5i25.0.encoder.00.index-mask-invert 0
 setp hm2_5i25.0.encoder.00.scale S::AXIS_0(ENCODER_SCALE)
 
-net hm2_5i25.0.encoder.00.position      => x-pos-fb
-net hm2_5i25.0.encoder.00.velocity      => x-vel-fb
-net hm2_5i25.0.encoder.00.index-enable <=> x-index-enable
-net hm2_5i25.0.encoder.00.rawcounts     => x-pos-rawcounts
+net x-pos-fb <= hm2_5i25.0.encoder.00.position
+net x-vel-fb <= hm2_5i25.0.encoder.00.velocity
+net x-index-enable <=> hm2_5i25.0.encoder.00.index-enable
+net x-pos-rawcounts <= hm2_5i25.0.encoder.00.rawcounts     =>
