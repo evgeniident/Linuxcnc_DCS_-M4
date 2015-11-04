@@ -5,7 +5,7 @@
 net z-enable  <= axis.2.amp-enable-out
 net z-pos-cmd <= axis.2.motor-pos-cmd
 net z-pos-fb  => axis.2.motor-pos-fb
-net y-index-enable <=> axis.1.index-enable
+net z-index-enable <=> axis.2.index-enable
 
 #  ---home signals---
 net z-home-sw  => axis.2.home-sw-in
