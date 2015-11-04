@@ -57,4 +57,4 @@ setp hm2_5i25.0.encoder.00.scale S::AXIS_0(ENCODER_SCALE)
 net x-pos-fb <= hm2_5i25.0.encoder.00.position
 net x-vel-fb <= hm2_5i25.0.encoder.00.velocity
 net x-index-enable <=> hm2_5i25.0.encoder.00.index-enable
-net x-pos-rawcounts <= hm2_5i25.0.encoder.00.rawcounts     =>
+net x-pos-rawcounts <= hm2_5i25.0.encoder.00.rawcounts
