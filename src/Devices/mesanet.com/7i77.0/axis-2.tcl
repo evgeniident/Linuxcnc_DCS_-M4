@@ -1,15 +1,6 @@
 #*******************
 #  AXIS Z
 #*******************
-net axis.2.amp-enable-out z-enable
-net axis.2.motor-pos-cmd z-pos-cmd
-net axis.2.motor-pos-fb <= z-pos-fb
-net axis.2.index-enable <=> z-index-enable
-# ---setup home / limit switch signals---
-net axis.2.home-sw-in    <= z-home-sw
-net axis.2.neg-lim-sw-in <= z-neg-limit
-net axis.2.pos-lim-sw-in <= z-pos-limit
-
 loadrt pid names=pid.z
 addf pid.z.do-pid-calcs servo-thread
 setp   pid.z.Pgain     S::AXIS_2(P)
