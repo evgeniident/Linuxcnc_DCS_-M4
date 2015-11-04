@@ -8,8 +8,8 @@
 #setp   hm2_5i25.0.7i76.0.0.spinout-maxlim    $::SPINDLE_9(OUTPUT_MAX_LIMIT)
 #setp   hm2_5i25.0.7i76.0.0.spinout-scalemax  $::SPINDLE_9(OUTPUT_SCALE)
 
-net hm2_5i25.0.7i77.0.1.analogout5 <= spindle-vel-cmd
-net hm2_5i25.0.7i77.0.1.spinena    <= machine-is-enabled
+net spindle-vel-cmd => hm2_5i25.0.7i77.0.1.analogout5
+net machine-is-enabled => hm2_5i25.0.7i77.0.1.spinena
 
 loadrt and2 names=spindle_ena_1
 
