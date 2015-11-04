@@ -8,6 +8,10 @@ net z-pos-fb  => axis.2.motor-pos-fb
 net z-index-enable <=> axis.2.index-enable
 
 #  ---home signals---
-net z-home-sw  => axis.2.home-sw-in
-net max-home-z => axis.2.home-sw-in
-net max-home-z => axis.2.pos-lim-sw-in
+
+net axis.2.home-sw-in    <= z-home-sw
+
+# ---limit switch signals---
+
+net axis.2.neg-lim-sw-in <= z-neg-limit
+net axis.2.pos-lim-sw-in <= z-pos-limit
