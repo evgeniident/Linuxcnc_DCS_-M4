@@ -7,8 +7,8 @@ net x-pos-fb  => axis.0.motor-pos-fb
 net x-index-enable <=> axis.0.index-enable
 
 #  ---home signals---
-net z-home-sw => axis.0.home-sw-in
+net x-home-sw => axis.0.home-sw-in
 
 # ---limit switch signals---
-net z-neg-limit => axis.0.neg-lim-sw-in
-net z-pos-limit => axis.0.pos-lim-sw-in
+net x-neg-limit => axis.0.neg-lim-sw-in
+net x-pos-limit => axis.0.pos-lim-sw-in
