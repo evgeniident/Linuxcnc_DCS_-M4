@@ -8,7 +8,9 @@ net z-index-enable <=> axis.2.index-enable
 
 #  ---home signals---
 net z-home-sw => axis.2.home-sw-in
+#net z-home-sw => axis.2.home-sw-in
 
 # ---limit switch signals---
 net z-neg-limit => axis.2.neg-lim-sw-in
 net z-pos-limit => axis.2.pos-lim-sw-in
+#net max-home-z => axis.2.pos-lim-sw-in
