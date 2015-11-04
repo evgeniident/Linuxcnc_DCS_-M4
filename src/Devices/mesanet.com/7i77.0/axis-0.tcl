@@ -1,17 +1,6 @@
 #*******************
 #  AXIS X
 #*******************
-net x-enable <= axis.0.amp-enable-out 
-net x-pos-cmd <= axis.0.motor-pos-cmd
-net x-pos-fb => axis.0.motor-pos-fb
-net x-index-enable <=> axis.0.index-enable
-# ---setup home / limit switch signals--- 
-net x-home-sw => axis.0.home-sw-in
-net x-neg-limit => axis.0.neg-lim-sw-in
-net x-pos-limit => axis.0.pos-lim-sw-in
-
-
-
 loadrt pid names=pid.x
 addf pid.x.do-pid-calcs servo-thread
 setp   pid.x.Pgain     S::AXIS_0(P)
