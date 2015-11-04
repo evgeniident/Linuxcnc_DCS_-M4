@@ -30,7 +30,7 @@ setp hm2_5i25.0.7i77.0.2.analogout1-scalemax S::AXIS_2(OUTPUT_SCALE)
 setp hm2_5i25.0.7i77.0.2.analogout1-minlim   S::AXIS_2(OUTPUT_MIN_LIMIT)
 setp hm2_5i25.0.7i77.0.2.analogout1-maxlim   S::AXIS_2(OUTPUT_MAX_LIMIT)
 
-net hm2_5i25.0.7i77.0.2.analogout1 <= z-output
+net z-output => hm2_5i25.0.7i77.0.2.analogout1
 
 # ---Encoder feedback signals/setup---
 
