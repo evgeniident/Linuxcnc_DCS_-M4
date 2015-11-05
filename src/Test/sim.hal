@@ -7,7 +7,7 @@ net linuxcnc.test.all-pos-lim => axis.0.pos-lim-sw-in
 
 unlinkp axis.0.motor-pos-cmd
 unlinkp axis.0.motor-pos-fb
-net linuxcnc.test.y-pos-loop <= axis.0.motor-pos-cmd => axis.0.motor-pos-fb
+net linuxcnc.test.x-pos-loop <= axis.0.motor-pos-cmd => axis.0.motor-pos-fb
 
 unlinkp axis.1.home-sw-in
 net linuxcnc.test.all-home    => axis.1.home-sw-in
@@ -29,7 +29,7 @@ net linuxcnc.test.all-pos-lim => axis.2.pos-lim-sw-in
 
 unlinkp axis.2.motor-pos-cmd
 unlinkp axis.2.motor-pos-fb
-net linuxcnc.test.y-pos-loop <= axis.2.motor-pos-cmd => axis.2.motor-pos-fb
+net linuxcnc.test.z-pos-loop <= axis.2.motor-pos-cmd => axis.2.motor-pos-fb
 
 sets linuxcnc.test.all-pos-lim 0
 sets linuxcnc.test.all-neg-lim 0
