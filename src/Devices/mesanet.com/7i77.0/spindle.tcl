@@ -23,9 +23,3 @@ net spindle-on => spindle_ena_1.in0
 net spindle-clean-air => spindle_ena_1.in1
 net spindle-clean-air-cmd <= spindle_ena_1.out
 
-# Включение шпинделя
-net spindle-on => hm2_5i25.0.7i77.0.0.output-01
-# Включение очистки
-net spindle-clean-air-cmd => hm2_5i25.0.7i77.0.0.output-02
-# Расжим цанги
-net open-collet => hm2_5i25.0.7i77.0.0.output-03
