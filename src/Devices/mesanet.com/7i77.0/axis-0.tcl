@@ -3,15 +3,15 @@
 #*******************
 loadrt pid names=pid.x
 addf pid.x.do-pid-calcs servo-thread
-setp   pid.x.Pgain     S::AXIS_0(P)
-setp   pid.x.Igain     S::AXIS_0(I)
-setp   pid.x.Dgain     S::AXIS_0(D)
-setp   pid.x.bias      S::AXIS_0(BIAS)
-setp   pid.x.FF0       S::AXIS_0(FF0)
-setp   pid.x.FF1       S::AXIS_0(FF1)
-setp   pid.x.FF2       S::AXIS_0(FF2)
-setp   pid.x.deadband  S::AXIS_0(DEADBAND)
-setp   pid.x.maxoutput S::AXIS_0(MAX_OUTPUT)
+setp   pid.x.Pgain     [lindex S::AXIS_0(P) 0]
+setp   pid.x.Igain     [lindex S::AXIS_0(I) 0]
+setp   pid.x.Dgain     [lindex S::AXIS_0(D) 0]
+setp   pid.x.bias      [lindex S::AXIS_0(BIAS) 0]
+setp   pid.x.FF0       [lindex S::AXIS_0(FF0) 0]
+setp   pid.x.FF1       [lindex S::AXIS_0(FF1) 0]
+setp   pid.x.FF2       [lindex S::AXIS_0(FF2) 0]
+setp   pid.x.deadband  [lindex S::AXIS_0(DEADBAND) 0]
+setp   pid.x.maxoutput [lindex S::AXIS_0(MAX_OUTPUT) 0]
 
 net x-index-enable  <=>  pid.x.index-enable
 net x-enable       => pid.x.enable
