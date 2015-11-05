@@ -1,10 +1,13 @@
 # --- Output ---
 
-net estop-loop => hm2_5i25.0.7i77.0.0.output-00
+# Включение шпинделя
 net spindle-on => hm2_5i25.0.7i77.0.0.output-01
-net spindle-on => hm2_5i25.0.7i77.0.0.output-02
-net spindle-open-collet => hm2_5i25.0.7i77.0.0.output-03
-#net tool-changed       => hm2_5i25.0.7i77.0.0.output-03
+# Включение очистки
+net spindle-clean-air-cmd => hm2_5i25.0.7i77.0.0.output-02
+# Расжим цанги
+net open-collet => hm2_5i25.0.7i77.0.0.output-03
+
+net estop-loop => hm2_5i25.0.7i77.0.0.output-00
 
 # --- Input ---
 
