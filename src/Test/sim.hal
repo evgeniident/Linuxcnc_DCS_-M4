@@ -35,6 +35,6 @@ sets linuxcnc.test.all-pos-lim 0
 sets linuxcnc.test.all-neg-lim 0
 sets linuxcnc.test.all-home    0
 
-unlinkp iocontrol.0.user-enable-out
-unlinkp iocontrol.0.emc-enable-in
-net linuxcnc.test.estop-loop <= iocontrol.0.user-enable-out => iocontrol.0.emc-enable-in
+#unlinkp iocontrol.0.user-enable-out
+#unlinkp iocontrol.0.emc-enable-in
+#net linuxcnc.test.estop-loop <= iocontrol.0.user-enable-out => iocontrol.0.emc-enable-in
