@@ -2,6 +2,9 @@
 #******************************
 # 
 #******************************
+unlinkp iocontrol.0.user-enable-out
+unlinkp iocontrol.0.emc-enable-in
+net linuxcnc.test.estop-loop <= iocontrol.0.user-enable-out => iocontrol.0.emc-enable-in
 
 #source MDI_Commands/mdi_commands.tcl
 #source Interface/Gamepad-devl/Head.tcl
