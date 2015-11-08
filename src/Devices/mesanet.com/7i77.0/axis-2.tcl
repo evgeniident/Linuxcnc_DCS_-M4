@@ -31,8 +31,10 @@ setp hm2_5i25.0.7i77.0.2.analogout1-minlim   S::AXIS_2(OUTPUT_MIN_LIMIT)
 setp hm2_5i25.0.7i77.0.2.analogout1-maxlim   S::AXIS_2(OUTPUT_MAX_LIMIT)
 
 net z-output => hm2_5i25.0.7i77.0.2.analogout1
-net z-pos-cmd    axis.2.motor-pos-cmd
-net z-enable     axis.2.amp-enable-out
+#Эти строки должны жить здесь:
+# LinuxCNC/axis-2.hal
+#net z-pos-cmd    axis.2.motor-pos-cmd
+#net z-enable     axis.2.amp-enable-out
 
 # ---Encoder feedback signals/setup---
 
