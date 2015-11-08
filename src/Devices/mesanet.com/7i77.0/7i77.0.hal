@@ -6,4 +6,5 @@ source Devices/mesanet.com/7i77.0/axis-0.tcl
 source Devices/mesanet.com/7i77.0/axis-1.tcl
 source Devices/mesanet.com/7i77.0/axis-2.tcl
 
+# enable _all_ sserial pwmgens
 net hm2_5i25.0.7i77.0.1.analogena x-enable 
