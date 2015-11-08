@@ -31,8 +31,11 @@ setp hm2_5i25.0.7i77.0.1.analogout1-minlim   S::AXIS_1(OUTPUT_MIN_LIMIT)
 setp hm2_5i25.0.7i77.0.1.analogout1-maxlim   S::AXIS_1(OUTPUT_MAX_LIMIT)
 
 net y-output => hm2_5i25.0.7i77.0.1.analogout1
-net y-pos-cmd    axis.1.motor-pos-cmd
-net y-enable     axis.1.amp-enable-out
+
+#Эти строки должны жить здесь:
+# LinuxCNC/axis-1.hal
+#net y-pos-cmd    axis.1.motor-pos-cmd
+#net y-enable     axis.1.amp-enable-out
 
 # ---Encoder feedback signals/setup---
 
