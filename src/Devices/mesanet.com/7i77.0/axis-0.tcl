@@ -31,6 +31,8 @@ setp hm2_5i25.0.7i77.0.1.analogout0-minlim   [lindex S::AXIS_0(OUTPUT_MIN_LIMIT)
 setp hm2_5i25.0.7i77.0.1.analogout0-maxlim   [lindex S::AXIS_0(OUTPUT_MAX_LIMIT) 0]
 
 net x-output => hm2_5i25.0.7i77.0.1.analogout0
+net x-pos-cmd    axis.0.motor-pos-cmd
+net x-enable     axis.0.amp-enable-out
 
 # ---Encoder feedback signals/setup---
 
