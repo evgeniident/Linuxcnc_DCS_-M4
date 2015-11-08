@@ -5,4 +5,8 @@ loadrt [lindex $::HOSTMOT2(DRIVER) 0] config=[lindex $::HOSTMOT2(CONFIG) 0]
 
 addf hm2_5i25.0.read servo-thread
 addf hm2_5i25.0.write servo-thread
+addf hm2_5i25.0.read_gpio servo-thread
+addf hm2_5i25.0.write_gpio servo-thread
+
+#Эта функция больше не используется
 #addf hm2_5i25.0.pet_watchdog servo-thread
